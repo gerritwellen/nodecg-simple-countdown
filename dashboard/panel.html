@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .monospace {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="updateDate">
+      <label for="countdownDate">Date:</label>
+      <input type="datetime-local" id="countdownDate" />
+      <button type="submit">Change</button>
+    </form>
+    <script>
+      const dateReplicant = nodecg.Replicant("countdownDate");
+      const updateForm = document.getElementById("updateDate");
+      const updateDate = document.getElementById("countdownDate");
+
+      updateForm.addEventListener("submit", (e) => {
+        e.preventDefault;
+        console.log(new Date(updateDate.value).getTime());
+        dateReplicant.value = new Date(updateDate.value).getTime();
+        console.log(dateReplicant.value);
+      });
+    </script>
+  </body>
+</html>
