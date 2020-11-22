@@ -12,18 +12,22 @@
     <form id="updateDate">
       <label for="countdownDate">Date:</label>
       <input type="datetime-local" id="countdownDate" />
+      <hr />
+      <label for="countdownDate">Label:</label>
+      <input type="text" id="countdownLabel" />
       <button type="submit">Change</button>
     </form>
     <script>
       const dateReplicant = nodecg.Replicant("countdownDate");
+      const labelReplicant = nodecg.Replicant("countdownLabel");
       const updateForm = document.getElementById("updateDate");
       const updateDate = document.getElementById("countdownDate");
+      const updateLabel = document.getElementById("countdownLabel");
 
       updateForm.addEventListener("submit", (e) => {
         e.preventDefault;
-        console.log(new Date(updateDate.value).getTime());
         dateReplicant.value = new Date(updateDate.value).getTime();
-        console.log(dateReplicant.value);
+        labelReplicant.value = updateLabel.value;
       });
     </script>
   </body>

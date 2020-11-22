@@ -1,0 +1,25 @@
+body {
+  font-family: Staatliches, sans-serif;
+  background-color: grey;
+}
+#textBox {
+  background: white;
+  position: absolute;
+  right: 0px;
+  top: 25px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text {
+  overflow: hidden;
+
+  font-size: 45px;
+  letter-spacing: 7px;
+}
+#countdown {
+}
+#label {
+  margin-left: 25px;
+}
