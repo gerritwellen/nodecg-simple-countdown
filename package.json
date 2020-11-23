@@ -23,7 +23,7 @@
     "dashboardPanels": [
       {
         "name": "panel",
-        "title": "Panel",
+        "title": "Countdown",
         "width": 2,
         "file": "panel.html",
         "headerColor": "#525F78"
@@ -31,7 +31,7 @@
     ],
     "graphics": [
       {
-        "file": "index.html",
+        "file": "countdown.html",
         "width": 1920,
         "height": 1080
       }

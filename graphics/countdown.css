@@ -14,11 +14,12 @@ body {
 }
 .text {
   overflow: hidden;
-
   font-size: 45px;
   letter-spacing: 7px;
 }
-#countdown {
+.countdown {
+  display: flex;
+  justify-content: flex-end;
 }
 #label {
   margin-left: 25px;
