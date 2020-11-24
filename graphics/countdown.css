@@ -3,14 +3,15 @@ body {
   background-color: grey;
 }
 #textBox {
-  background: white;
+  background-color: white;
   position: absolute;
   right: 0px;
   top: 25px;
-  width: 600px;
+  /*width: 600px;*/
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  clip-path: polygon(0% 0%, 40px 100%, 100% 100%, 100% 0%);
 }
 .text {
   overflow: hidden;
@@ -18,9 +19,17 @@ body {
   letter-spacing: 7px;
 }
 .countdown {
+  background: #485696;
+  color: white;
   display: flex;
   justify-content: flex-end;
+  width: 350px;
+
+  clip-path: polygon(0% 0%, 40px 100%, 100% 100%, 100% 0%);
 }
 #label {
-  margin-left: 25px;
+  padding-left: 45px;
+}
+#D {
+  padding-right: 20px;
 }
