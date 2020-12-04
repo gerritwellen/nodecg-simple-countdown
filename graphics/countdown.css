@@ -7,17 +7,22 @@ body {
   position: absolute;
   right: 0px;
   top: 25px;
-  /*width: 600px;*/
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   clip-path: polygon(0% 0%, 40px 100%, 100% 100%, 100% 0%);
 }
 .text {
+  text-align: center;
   overflow: hidden;
   font-size: 45px;
   letter-spacing: 7px;
 }
+
+.number {
+  width: 60px;
+}
+
 .countdown {
   background: #485696;
   color: white;
